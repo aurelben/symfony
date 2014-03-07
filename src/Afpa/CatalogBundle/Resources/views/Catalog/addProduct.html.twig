@@ -1,0 +1,23 @@
+{% extends "AfpaCatalogBundle::layout.html.twig" %}
+
+{% block body %}
+  <div class="container">
+<<<<<<< HEAD
+  	<div class="starter-template">
+        <h1>Création d'un Produit</h1>
+        <div>
+        	
+        	{{ form_start(form, {attr: {novalidate: 'novalidate'}}) }}
+        	{{ form_end(form) }}
+=======
+    {{ render(controller('AfpaMenuBundle:Menu:displayPrimaryMenu')) }}
+  	<div class="jumbotron">
+        <h4>Ajouter un produit</h4><br />
+        <div>
+        	{{ form_start(formulaire, {attr: {novalidate: 'novalidate'}}) }}
+        	{{ form_end(formulaire) }}
+>>>>>>> FETCH_HEAD
+        </div>
+    </div>
+  </div><!-- /.container -->
+{% endblock %}

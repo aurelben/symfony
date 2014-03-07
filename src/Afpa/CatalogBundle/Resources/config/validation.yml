@@ -1,0 +1,24 @@
+Afpa\CatalogBundle\Entity\Product:
+    properties:
+        title:
+<<<<<<< HEAD
+=======
+            - Length:
+                min: 5
+                minMessage: Donne moi un peu plus de détails
+>>>>>>> FETCH_HEAD
+            - NotBlank: ~
+        body:
+            - NotBlank: ~
+        price:
+            - GreaterThan: 0
+<<<<<<< HEAD
+
+Afpa\CatalogBundle\Entity\Category:
+    properties:
+        title:
+            - NotBlank:
+            - MinLength: 10
+
+=======
+>>>>>>> FETCH_HEAD

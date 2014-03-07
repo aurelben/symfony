@@ -1,0 +1,30 @@
+{% extends "AfpaCatalogBundle::layout.html.twig" %}
+
+{% block inside_body %}
+  {{ parent() }}
+    <div class="jumbotron">
+<<<<<<< HEAD
+      <h1>Bienvenue sur {{ site_name }}</h1>
+      <p>{% filter positif('fort') %}Le site de référence pour votre materiel sportif.{% endfilter %}<br />
+          Du bonnet à la chaussette, nous sélectionnons ce qui se fait de mieux, à un prix plutôt raisonable.</p>
+      <p>
+        <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Voir tous produits &raquo;</a>
+      </p>
+    </div>
+=======
+      <h1>{{ site_name }}</h1>
+      <p>{% filter positif('fort') %}Le site de référence pour votre materiel sportif.{% endfilter %}<br />
+          Du bonnet à la chaussette, nous sélectionnons ce qui se fait de mieux, à un prix plutôt raisonable.</p>
+      <p>
+        <a class="btn btn-lg btn-primary" href="{{ path('afpa_catalog_all') }}" role="button">Voir tous produits &raquo;</a>
+      </p>
+    </div>
+    {% for line_product in products|batch(3) %}
+	    <div class="row">
+	    	{% for product in line_product %}
+	    		{% include('AfpaCatalogBundle:Catalog:product-grid.html.twig') %}
+		 	 	{% endfor %}
+			</div>
+		{% endfor %}
+>>>>>>> FETCH_HEAD
+{% endblock %}
