@@ -42,19 +42,14 @@ security:
                 anonymous:    true
 
     access_control:
-<<<<<<< HEAD
-=======
-        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
->>>>>>> FETCH_HEAD
+
+
+
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
-<<<<<<< HEAD
         - { path: ^/product, role: ROLE_USER }
 
 
 
-=======
-        - { path: ^/product/*, role: ROLE_USER }
->>>>>>> FETCH_HEAD
