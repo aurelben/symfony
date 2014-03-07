@@ -20,11 +20,8 @@
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
         "doctrine/doctrine-fixtures-bundle": "2.2.*@dev",
-<<<<<<< HEAD
         "friendsofsymfony/user-bundle": "~2.0@dev"
-=======
-        "friendsofsymfony/user-bundle": "2.0.*@dev"
->>>>>>> FETCH_HEAD
+
     },
     "scripts": {
         "post-install-cmd": [
